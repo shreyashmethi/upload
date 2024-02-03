@@ -1,0 +1,970 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+html 
+{
+    scroll-behavior: smooth;
+}
+
+.main
+{
+
+}
+
+.sec1
+{
+    background-color:  #C7711E;
+    display: flex;
+}
+.pop
+{
+    position: absolute;
+    width: 100vw;
+    height: 70vh;
+    top: 0;
+}
+
+.nav
+{
+    position: absolute;
+    top: 0;
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    z-index: 100;
+}
+.nav1
+{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nav2
+{
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 60px;
+}
+.signup
+{
+    font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: #FFFFFF;
+margin-left: 40px;
+padding: 10px 25px;
+border: 3px solid rgba(255, 255, 255, 0.87);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+cursor: pointer;
+}
+.signup:hover
+{
+    color: rgb(125, 125, 125);
+    border: 3px solid rgb(125, 125, 125);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.ele
+{
+font-family: 'Montserrat', sans-serif;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: #FFFFFF;
+margin-left: 40px;
+text-decoration: none;
+cursor: pointer;
+}
+.ele:hover
+{
+    color: rgb(125, 125, 125);
+
+}
+
+.bg1{
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background: #000000;
+    position: absolute;
+    z-index: 0;
+    
+}
+.bg1>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+.bg2{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    position: absolute;
+    z-index: -1;
+    
+}
+.bg2>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.contact1>.try1
+{
+    width: "80px";
+    margin-left: auto;
+    margin-right: 2.3vw;
+}
+
+.content
+{
+    position: relative;
+    z-index: 10;
+    width: min(50%,600px);
+    margin-left:max(3%,70px);
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 25px rgba(255, 203, 69, 0.5);
+}
+.header
+{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 60px;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 25px rgba(255, 203, 69, 0.5);
+}
+.con{
+    margin-top: 10px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 25px;
+line-height: 49px;
+white-space: 20px;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 20px rgba(255, 203, 69, 0.5);
+}
+.contact1>.social
+{
+    display: none;
+}
+.try
+{
+    
+    width: 70%;
+    margin-top: 20px;
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.try1
+{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 35px;
+    color: white;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+border: 3px solid white;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.try1:hover
+{
+    transform: scale(1.05);    
+
+}
+.try1>img{
+    width: 30px;
+}
+.try2
+{
+    cursor: pointer;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+text-decoration: underline;
+text-align: center;
+color: #FFFFFF;
+
+text-shadow: 0px 4px 20px rgba(255, 203, 69, 0.5);
+}
+.sec2
+{
+    display: flex;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    flex-direction:column;
+    align-items: center;
+    background: rgba(255, 248, 231, 0.91);
+    overflow: hidden;
+    padding-bottom: 20px;
+
+}
+.cardSec
+{
+    margin-top: 15vh; 
+    width: 95%;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+
+}
+
+.card{
+width: 300px;
+background: linear-gradient(153.45deg, #FFFFFF 1.11%, rgba(255, 255, 255, 0.7) 36.76%, rgba(255, 255, 255, 0.7) 70.93%, #FFFFFF 96.19%);
+border-radius: 25px;
+min-height: 400px;
+box-shadow: 5px 5px 4px 3px #a5a5a5;
+}
+.card1
+{
+    height: 220px;
+    width:300px; ;
+    border-radius: 20px;
+}
+.card1>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0px 0px;
+}
+.card2
+{
+padding: 20px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #000000;
+text-shadow: 0px 4px 20px rgba(255, 203, 69, 0.5);
+
+}
+
+.about
+{
+   background: rgb(255, 202, 69);
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.im
+{
+    position: absolute;
+    bottom: -4vh;
+    width: 100%;
+}
+.im>img{
+  
+    width: 100%;
+  
+}
+
+.content1
+{
+    margin-top: 15vh;
+    position: relative;
+    z-index: 10;
+    width: min(60%,800px);
+    margin-left:max(3%,70px);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    font-style: normal;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 25px rgba(255, 203, 69, 0.5);
+    margin-bottom: 5vh;
+}
+.con1{
+    margin-top: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+}
+.bot
+{
+    width: 100%;
+    height: min(40vh,300px);
+    background: #000000;
+    display: flex;
+    font-family: 'Montserrat';
+    overflow: hidden;
+}
+.nlogo
+{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-right:20px;
+    margin-top: 20px;
+    width: 20%;
+}
+.nlogo>img{
+    
+    object-fit: contain;
+}
+
+.nave{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    align-items: flex-start;
+   margin-top: 5vh;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navhead
+{
+    color: #FFF;
+font-size: 32px;
+
+font-weight: 700;
+margin-bottom: 30px;
+}
+.nave>a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.80);
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+.pcard
+{
+    background: #FFF;
+    border-radius: 25px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    box-shadow: 5px 5px 4px 3px #a5a5a5;
+}
+.pcard:hover
+{
+    transform: scale(1.05);    
+}
+.cardHead
+{
+    margin-top: 1.3rem;
+    width: 100%;
+    color: white;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+text-align: center;
+font-size: 1.2rem;
+font-family: 'Montserrat';
+font-weight: 800;
+margin-bottom: 1.5rem;
+}
+.points
+{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+.cardel
+{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    color: #000;
+font-size: 0.95rem;
+
+font-weight: 400;
+}
+.cardel>img{
+    width: 15px;
+    object-fit: contain;
+    margin-right: 10px;
+
+}
+.cardPrice
+{
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    color: #000;
+text-align: center;
+font-size: 1rem;
+/* font-family: 'Montserrat'; */
+font-weight: 500;
+
+}
+.cardPrice>span
+{
+    color: #000;
+    text-align: center;
+    font-size: 2.3rem;
+    /* font-family: 'Montserrat'; */
+    font-weight: 800;
+}
+.priceBtn{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 80%;
+    background: #FFF;
+    border-radius: 20px;
+    border: 1px solid black;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+padding:10px  0px ;
+}
+.priceBtn:hover
+{
+    color: grey;
+    background-color: #CCA23726;
+}
+.bgContact>div{
+    right: 0;
+    position: absolute;
+    height: 70vh;
+    width: 20vw;
+    z-index: 7;
+    background: linear-gradient(271deg, #000 23.44%, rgba(0, 0, 0, 0.00) 100%);
+    
+}
+.contact
+{
+    /* background: black; */
+    color: white;
+    display: flex;
+    height: 70vh;
+    background: #000;
+}
+.newCon
+{
+    width: 100%;
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    
+
+}
+.social
+{
+    margin-left: auto;
+    margin-right: auto;
+margin-top: auto;
+margin-bottom: 5vh;
+width: 80%;
+display: flex;
+gap: 20px;
+
+justify-content: space-between;
+}
+.social>a{
+text-decoration: none;
+width: 34px;
+height: 34px;
+}
+.links{
+   width: 34px;
+height: 34px;
+
+    object-fit: scale-down;
+}
+
+.conLog{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.coninfo
+{
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 80%;
+    
+}
+.conele
+{
+    display: flex;
+    font-size: 1.3rem;
+    align-items: center;
+    color: white;
+}
+.conele>img
+{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.hr{
+    margin-top: auto;
+    background: white;
+    height: 2px;
+    width: 80%;
+
+}
+
+
+.bgContact
+{
+    width: 60%;
+    height: 70vh;
+    background: black;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+}
+.bgContact>img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+
+}
+.conMain
+{
+width: 50%;
+padding: 20px 3%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+}
+.conMain>.header
+{
+    margin-top: 5px;
+}
+
+.contact1
+{
+    margin-left: auto;
+    margin-right: 4vw;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:start ;
+    margin-bottom: 10px;
+    margin-top: 2rem;
+    gap: 2rem;
+    
+   
+}
+.contact1>input,.contact1>textarea
+{
+    color: white;
+   
+    padding: 8px 10px;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    font-size: 1rem;
+    width: min(75%,400px);
+    background: transparent;
+    margin-right: 2.3vw;
+    margin-left: auto;
+  
+
+}
+.contact1>textarea
+{
+  
+    min-height: 10vh;
+    background: transparent;
+
+}
+.contact1>.header
+{
+    font-size: 4rem;
+}
+.conSend
+{
+    margin-top: 1.0rem;
+    border-radius: 10px;
+    border: 2px solid #4D2C23;
+    background: rgba(204, 162, 55, 0.43);
+    color: #7E440F;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+    font-weight: 800;
+    width: 150px;
+    padding: 10px 0px;
+    margin-right: auto;
+}
+.conSend:hover
+{
+    background: rgba(204, 162, 55, 0.048);
+    cursor: pointer;
+}
+.faq
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+}
+.faqbg
+{
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    overflow: hidden;
+    background-color: #000;
+    z-index: -1;
+}
+.faqbg>img{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+.faqe
+{
+    width: 85%;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background: rgba(0, 0, 0, 0.40);
+    padding: 5px 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vh;
+    transition: max-height 3s ease-in-out ;
+    overflow: hidden ;
+}
+
+.faqe.open
+ {
+    max-height: 5000px; /* Adjust the max height according to your content */
+  }
+
+.faqe:hover {
+    background: rgba(0, 0, 0, 0.60);
+    border-color: #FFF;
+  }
+
+.ques
+{
+color: #FFF;
+font-size: 1.5rem;
+font-family: 'Montserrat';
+font-weight: 600;
+width: 100%;
+padding: 9px 0px;
+display: flex;
+transition: all 0.5s ease;
+
+}
+
+.faqe:hover .ques {
+    color: #CCA237; /* Change to the desired hover color */
+  }
+
+
+.qimg
+{
+    margin-left: auto;
+}
+.qimg>img{
+    width: 20px;
+    object-fit: contain;
+    margin-right: auto;
+    transition: all 0.3s ease;
+}
+
+.qimg.open>img {
+    transform: rotate(180deg); /* Rotate the image when the FAQ is open */
+  }
+
+
+.ans
+{
+    margin-top: 1rem;
+    color: #FFF;
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 90%;
+    white-space: 0.4rem;
+    padding-bottom: 15px;
+    transition: max-height 0.5s ease;
+
+}
+
+.ans.open {
+    max-height: 500px; /* Set a reasonable max-height value */
+  }
+
+.faqe:hover .ans {
+    color: #CCA237; /* Change to the desired hover color */
+  }
+
+
+.faqSec
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 20px;
+    width: 90%;
+    align-items: center;
+    
+
+}
+.bot
+{
+    position: relative;
+}
+.privacy
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+ position: absolute;
+ left: 1vw;
+ bottom: 2vh; 
+ text-decoration: underline;
+ color: rgba(255, 255, 255, 0.80);
+ font-size: 16px;
+}
+
+@media only screen and (max-width: 900px) {
+.nav1>a{
+    display:none;
+}
+.signup{
+    display: none;
+}
+.content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.con
+{
+    width: 90%;
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.try
+{
+    margin-top: 5vh;
+    width: 100%;
+}
+.try2 ,.try1
+{
+    font-size: 1.2rem;
+}
+.cardSec
+{
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 9vw;
+    overflow: auto;
+
+    padding: 4vh;
+    padding-top: 0px;
+
+    scroll-padding: 0px;
+    scrollbar-width: 0px;
+}
+
+
+.ans
+{
+    width: 95%;
+    font-size: 1.1rem;
+}
+.about
+{
+    background: #CCA237;
+    min-height: 100vh;
+    height: auto;
+}
+.content1
+{
+    margin-top: 5vh;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1rem;
+    height: fit-content;
+}
+.con1
+{
+    margin-top: 3vh;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    margin-bottom: 7vh;
+    justify-content: center;
+}
+.faq
+{
+    height: auto;
+    min-height: 100vh;
+}
+.contact
+{
+    background: #000;
+}
+.bgContact
+{
+
+    position: absolute;
+    z-index: 0;
+     opacity: 0.3;
+    width: 100%;
+    height: 100vh;
+}
+.conMain
+{
+    position: absolute;
+    padding:0px;
+    z-index: 1;
+    width: 100%;
+}
+.contact1
+{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact1>input,.contact1>textarea{
+    width: 80%;
+    margin: 0px;
+    color: white;
+    border: white 1px solid;
+}
+.contact1>.try1
+{
+   margin-left: auto;
+   margin-right: auto;
+}
+/* .newCon
+{
+    flex-direction: column-reverse;
+} */
+.conLog
+{
+    display: none;
+    opacity: 0;
+}
+/* .conMain>textarea
+{
+    color: white;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    border: white 1px solid;
+} */
+.conSend
+{
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(204, 162, 55, 1);
+}
+.bot
+{
+    justify-content: center;
+    height: auto;
+    padding-bottom: 5vh;
+}
+.nlogo
+{
+   display: none;
+    
+}
+.sec2
+{
+    min-height: 100vh;
+    height: auto;
+}
+.contact1>.social
+{
+    display: flex;
+    width: 80%;
+    margin-top: 1vh;
+}
+
+.social
+{
+    margin-top: 5vh;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bgContact>div{
+    right: 0;
+    position: absolute;
+    height: 70vh;
+    width: 100vw;
+    z-index: 7;
+    background: linear-gradient(271deg, #000 23.44%, rgba(0, 0, 0, 0.00) 100%);
+    
+}
+.conMain>.header
+{
+    margin-left: auto;
+    font-size: 2rem;
+    margin-right: auto;
+    margin-top: 2vh;
+}
+.ques
+{
+    font-size: 1.2rem;
+}
+.ans
+{
+    font-size: 0.9rem;
+}
+.privacy
+{
+    left: 40vw;
+}
+}
+

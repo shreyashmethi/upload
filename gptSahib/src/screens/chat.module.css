@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.main
+{
+    background: #F5F5F5;
+    min-height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.menubtn
+{
+position: absolute;
+top: 20px;
+left: 20px;
+width: 20px;
+cursor: pointer;
+}
+
+.menubtn>img
+{
+    width: 100%;
+    filter: brightness(0) invert(1);
+    object-fit: contain;
+    cursor: pointer;
+}
+.cinput{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 50%;
+    position: relative;
+   
+}
+.chatSec
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: #20262B;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.chats{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    background: transparent;
+   
+}
+.qele
+{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    background: #20262B;
+    color: white;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.query
+{
+ display: flex;
+ align-items: center;
+ width: 100%;
+
+}
+.v1
+{
+ width: 100%;
+ height: 100%;
+ display: flex;
+ align-items: center ;  
+ margin-top: 3vh;
+ overflow-x: auto;
+}
+.ans
+{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+.hr{
+    margin-top: 1rem;
+    width: 100%;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+/* .ans>img
+{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-left: 0px;
+   margin-right: 20px;
+
+} */
+.ans>img{
+    scale: 1.5;
+}
+.query>img , .ans>img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-left: 10px;
+   margin-right: 20px;
+}
+
+.empty
+{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size:1.2rem;
+text-align: center;
+width: 60%;
+color: rgba(255, 255, 255, 0.8);
+margin: auto;
+}
+.cinput>input
+{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size:1.2rem;
+
+
+width: 100%;
+color: rgba(77, 44, 35, 0.8);
+background: #FFFFFF;
+box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+padding: 5px 20px;
+border: transparent;
+height: 3rem;
+}
+.v1
+{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+.cinput>img
+{
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+    width: 30px;;
+}
+.cinput>img:hover
+{
+   filter: brightness(0);
+}
+
+.menu
+{
+background: #BC5E0E;
+height: 100vh;
+width: min(20%,350px);
+display: flex;
+flex-direction: column;
+transition: all 0.1s ease-in-out; 
+}
+
+.menuOpen {
+    transform: translateX(0);
+    transition: all 0.1s ease-in-out;
+  }
+
+.menuClose {
+    transform: translateX(0);
+    transition: all 0.1s ease;
+  }
+
+.close{
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: min(5vh,20px);
+    position: absolute;
+    cursor: pointer;
+   
+}
+.close>img{
+ 
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.new
+{
+    margin-top: min(5vh,20px);
+
+    display: flex;
+    justify-content: start;
+    padding: 10px 20px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+border: 1px solid #FFFFFF;
+border-radius: 5px;
+    margin-left: 50px;
+    margin-right: auto;
+color: #FFFFFF;
+cursor: pointer;
+    align-items: center;
+}
+.new>img{
+    width: 20px;
+    margin-right: 20px;
+}
+.prev>img{
+    width: 15px;
+    margin-right: 10px;
+}
+.prev{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 0.9rem;
+color: white;
+white-space: nowrap;
+text-overflow: ellipsis;
+max-width: 250px;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+width: 70%;
+max-width: 70%;
+margin-bottom: 30px;
+
+}
+.his
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-height: 80vh;
+   overflow: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 3%;
+    border: #ffffff 2px solid;
+}
+.his::-webkit-scrollbar
+{
+    
+    width: 5px;
+    color: grey;
+}
+
+.bottom
+{
+    margin-top: auto;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ul
+{
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 1px;
+    width: 100%;
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+.prof
+{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #FFFFFF;
+margin-bottom: 10px;
+
+}
+
+.prof>img
+{
+    width: 15px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+.empty
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start ;
+    margin-top: 5vh;
+    height: 90vh;
+    overflow-y: auto;
+}
+.emptHeader
+{
+    color: #FFF;
+text-align: center;
+/* font-family: "Montserrat"; */
+font-size: 2rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 5vh;
+}
+.emptyEle
+{
+    width: min(80%,700px);
+    padding: 20px 20px;
+    background: rgba(245, 245, 245, 0.03);
+    color: rgba(255, 255, 255, 0.55);
+    text-align: left;
+font-family: "Montserrat";
+font-size: 1rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-bottom: 20px;
+}
+.emptyIns
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 10px;
+    margin-bottom: 25px;
+}
+@media only screen and (max-width: 900px) {
+.menu
+{
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+.cinput
+{
+    width: 80%;
+    
+}
+.empty
+{
+    margin-top: 1vh;
+    width: 95%;
+}
+.emptyEle
+{
+    width: 90%;
+}
+}
